@@ -3,7 +3,16 @@ import express from 'express';
 const route = express.Router();
 
 route.get('/', (req, res) => {
-  res.render('pages/home', { title: 'Home' });
+  res.render('pages/home', {
+    title: 'Home',
+    equipe: [
+      'Jacson Rodrigues',
+      'Matheus Rodrigues',
+      'Dante Dantas',
+      'Rafael Tavares',
+      'João Monteiro',
+    ],
+  });
 });
 
 route.get('/somador', (req, res) => {

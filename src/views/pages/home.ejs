@@ -1,4 +1,22 @@
 <%- contentFor('body') %> 
+<header class="nav-bar">
+  <ul>
+    <li><a class="selected" href="/">Home</a></li>
+    <li><a href="/somador">Somador</a></li>
+    <li><a href="/fibonacci">Fibonacci</a></li>
+    <li><a href="/mdc">MDC</a></li>
+    <li><a href="/ordenar">Ordenação</a></li>
+    <li><a href="/contador">Contagem</a></li>
+    <li><a href="/primo">Número Primo</a></li>
+  </ul>
+</header>
 <div class="home">
   <h1><%= title  %> </h1>
+  <p>Este é um site desenvolvido como trabalho da disciplina de Desenvolvimento de Software em Nuvem.</p>
+  <h1>Dev. Team</h1>
+  <ul>
+    <% equipe.map(integrante => { %> 
+      <li> <%= integrante  %>  </li>
+    <% }) %> 
+  </ul>
 </div>
