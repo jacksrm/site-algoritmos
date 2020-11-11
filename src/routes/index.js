@@ -1,24 +1,24 @@
-import contador from './appRoutes/contador';
-import fibonacci from './appRoutes/fibonacci';
-import home from './appRoutes/home';
-import mdc from './appRoutes/mdc';
-import ordenar from './appRoutes/ordenar';
-import primo from './appRoutes/primo';
-import somador from './appRoutes/somador';
+import contadorApp from './appRoutes/contador';
+import fibonacciApp from './appRoutes/fibonacci';
+import homeApp from './appRoutes/home';
+import mdcApp from './appRoutes/mdc';
+import ordenarApp from './appRoutes/ordenar';
+import primoApp from './appRoutes/primo';
+import somadorApp from './appRoutes/somador';
 
-import somador from './apiRoutes/somador';
+import somadorApi from './apiRoutes/somador';
 
 
 export const appRoutes = {
-  contador,
-  fibonacci,
-  home,
-  mdc,
-  ordenar,
-  primo,
-  somador,
+  contadorApp,
+  fibonacciApp,
+  homeApp,
+  mdcApp,
+  ordenarApp,
+  primoApp,
+  somadorApp,
 };
 
 export const apiRoutes = {
-  somador
+  somadorApi
 };
