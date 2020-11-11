@@ -1,0 +1,8 @@
+PRA FAZER O CLONE DO REPOSITÓRIO
+git clone <nome do repositório>
+
+PRA ESTAGIAR AS MUDANÇAS E FAZER COMMIT
+git add *
+git commit -m "qualquer mensagem pertinente às mudanças"
+git push --set-upstream origin main  // se for a primeira vez
+git push //a partir da segunda vez
