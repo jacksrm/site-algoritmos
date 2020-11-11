@@ -1,15 +1,32 @@
-<%- contentFor('body') %> 
+<%- contentFor('body') %>
 <header class="nav-bar">
   <ul>
-    <li><a href="/">Home</a></li>
-    <li><a class="selected" href="/somador">Somador</a></li>
-    <li><a href="/fibonacci">Fibonacci</a></li>
-    <li><a href="/mdc">MDC</a></li>
-    <li><a href="/ordenar">Ordenação</a></li>
-    <li><a href="/contador">Contagem</a></li>
-    <li><a href="/primo">Número Primo</a></li>
+    <li><a href="/app">Home</a></li>
+    <li><a class="selected" href="/app/somador">Somador</a></li>
+    <li><a href="/app/fibonacci">Fibonacci</a></li>
+    <li><a href="/app/mdc">MDC</a></li>
+    <li><a href="/app/ordenar">Ordenação</a></li>
+    <li><a href="/app/contador">Contagem</a></li>
+    <li><a href="/app/primo">Número Primo</a></li>
   </ul>
 </header>
 <div class="home">
-  <h1><%= title  %> </h1>
+  <h1>Somar um array</h1>
+  <p>insira os números separados por vírgula</p>
+  <form action="/app/somador" method="POST" autocomplete="off">
+    <input
+      type="text"
+      name="array"
+      required
+      pattern="^[\d,]+$"
+      placeholder="Ex: 1,2,3,4,5"
+    />
+    <button type="submit">Somar</button>
+  </form>
+
+  <div class="resultado">
+    <% if(resultado && resultado !== 'erro') { %>
+    <p>Soma: <%= resultado %></p>
+    <% } %>
+  </div>
 </div>
