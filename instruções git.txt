@@ -6,3 +6,7 @@ git add *
 git commit -m "qualquer mensagem pertinente às mudanças"
 git push --set-upstream origin main  // se for a primeira vez
 git push //a partir da segunda vez
+
+PRA ATUALIZAR AS MUDANÇAS VINDO DA NUVEM
+git pull // se já tiver feito "git push --set-upstream origin main" uma vez
+git pull origin main // se não tiver feito o descrito acima
