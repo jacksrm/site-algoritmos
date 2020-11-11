@@ -1,5 +1,7 @@
 import express from 'express';
 
+import somador from '../../utils/somador';
+
 const route = express.Router();
 
 route.get('/somador', (req, res) => {
@@ -8,15 +10,13 @@ route.get('/somador', (req, res) => {
 
 route.post('/somador', (req, res) => {
   const { array } = req.body;
-  const resultado = array.split(',').reduce((soma, el) => {
-    soma = parseFloat(soma);
+
+
+  const resultado = somador(array.split(',').map((el) => {
     el = parseFloat(el);
-
-    if (!soma) soma = 0;
     if (!el) el = 0;
-
-    return (soma += el);
-  });
+    return el;
+  }))
 
   return res.render('pages/somador', { resultado });
 });

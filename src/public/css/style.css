@@ -140,3 +140,34 @@ text-decoration: underline;
   color: #eee;
   border-color: #1f2020;
 }
+
+.home form button.btn-azul {
+  height: 35px;
+  padding: 0 10px;
+  background-color: transparent;
+  border: 1px solid blue;
+  color: blue;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 300ms;
+}
+
+.home form button.btn-azul:hover {
+  background-color: blue;
+  color: #eee;
+}
+
+.home form input.input-sml {
+  height: 35px;
+  width: 100px;
+
+}
+
+.input-lado-a-lado {
+  display: flex;
+}
+
+.input-lado-a-lado input{
+  margin: 0 15px;
+}

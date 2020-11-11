@@ -20,5 +20,5 @@ export const appRoutes = {
 };
 
 export const apiRoutes = {
-  somadorApi
+  somadorApi,
 };

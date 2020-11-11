@@ -1,7 +1,6 @@
 import express from 'express';
 import expressLayouts from 'express-ejs-layouts';
 
-// import routes from './routes';
 import { appRoutes } from './routes';
 
 const app = express();
@@ -12,7 +11,7 @@ app.use(expressLayouts);
 app.use(express.static(__dirname + '/public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-// app.use(routes);
+
 app.use('/app', appRoutes.contadorApp);
 app.use('/app', appRoutes.fibonacciApp);
 app.use('/app', appRoutes.homeApp);
