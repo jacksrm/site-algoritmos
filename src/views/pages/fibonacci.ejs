@@ -13,4 +13,23 @@
 
 <div class="home">
   <h1>Fibonacci</h1>
+  <p>Digita a quantidade de numeros da sequencia</p>
+  <form action="/app/fibonacci" method="POST" autocapitalize="off">
+    <input 
+    type="number" 
+    name="quantidade"
+    required
+    pattern="^[\d,.]+$"
+    placeholder="Ex: 1,2,3,4,5"
+    >
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div class="resultado">
+    <% if(resultado) { %>
+      <p>Sequencia Fibonacci:</p>
+      <p><%= resultado %></p>
+    <% } %>
+  </div>
 </div>
