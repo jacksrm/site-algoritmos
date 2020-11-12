@@ -1,4 +1,4 @@
-<%- contentFor('body') %> 
+<%- contentFor('body') %>
 <header class="nav-bar">
   <ul>
     <li><a href="/app">Home</a></li>
@@ -12,5 +12,16 @@
 </header>
 <div class="container">
   <h1>Será que é primo?</h1>
+  <p>Inserir o número o qual deseja verificar em sua existência se é pertencente a categoria de números primos.</p>
+  <form action="/app/primo" method="POST" autocomplete="off">
+    <input type="number" name="entrada">
+    <button type="submit">Averiguar</button>
+  </form>
+
+  <div class="resultado">
+    <% if(resultado) {%>
+    <p>Número <%= entrada %> <%= resultado  %> </p>
+    <% } %> 
+  </div>
 
 </div>
