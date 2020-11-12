@@ -1,10 +1,12 @@
 import express from 'express';
 import expressLayouts from 'express-ejs-layouts';
+import cors from 'cors';
 
 import { appRoutes } from './routes';
 
 const app = express();
 
+app.use(cors());
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.use(expressLayouts);

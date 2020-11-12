@@ -11,13 +11,8 @@ route.get('/somador', (req, res) => {
 route.post('/somador', (req, res) => {
   const { array } = req.body;
 
-
-  const resultado = somador(array.split(',').map((el) => {
-    el = parseFloat(el);
-    if (!el) el = 0;
-    return el;
-  }))
-
+  const resultado = somador(array);
+  
   return res.render('pages/somador', { resultado });
 });
 
