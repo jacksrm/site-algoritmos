@@ -12,12 +12,14 @@
 </header>
 <div class="container">
   <h1>Somar um array</h1>
-  <p>Insira os números separados por vírgula</p>
+  
   <form action="/app/somador" method="POST" autocomplete="off">
+    <p>Insira os números separados por vírgula</p>
     <input
       type="text"
       name="array"
       required
+      autofocus
       pattern="^[\d,.]+$"
       placeholder="Ex: 1,2,3,4,5"
     />

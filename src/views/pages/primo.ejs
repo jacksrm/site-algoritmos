@@ -12,16 +12,28 @@
 </header>
 <div class="container">
   <h1>Será que é primo?</h1>
-  <p>Inserir o número o qual deseja verificar em sua existência se é pertencente a categoria de números primos.</p>
+
   <form action="/app/primo" method="POST" autocomplete="off">
-    <input type="number" name="entrada">
+    <p>
+      Inserir o número o qual deseja verificar em sua existência se é
+      pertencente à categoria de números primos.
+    </p>
+    <input
+      class="input-sml"
+      type="number"
+      min="1"
+      required
+      autofocus
+      pattern="^[\d]+$"
+      name="entrada"
+      placeholder="Ex: 11"
+    />
     <button type="submit">Averiguar</button>
   </form>
 
   <div class="resultado">
     <% if(resultado) {%>
-    <p>Número <%= entrada %> <%= resultado  %> </p>
-    <% } %> 
+    <p>Número <%= entrada %> <%= resultado %></p>
+    <% } %>
   </div>
-
 </div>
