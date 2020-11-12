@@ -1,4 +1,6 @@
 const fibonacci = (quantidade) => {
+  if (typeof quantidade === 'string') parseInt(quantidade);
+
   let numAnt = 0;
   let numAtual = 1;
   let proxNum;

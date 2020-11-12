@@ -1,12 +1,13 @@
+const primo = (numero) => {
+  if (typeof numero === 'string') numero = parseInt(numero);
 
-const primo = (n) => {
-    n = parseInt(n);
-    for (let i = 2; i < n; i++) {
-        let aux = n % i;
+  for (let i = 2; i < numero; i++) {
+    let aux = numero % i;
 
-        if (aux === 0) return false;
-    }
+    if (aux === 0) return false;
+  }
 
-    return n > 1;
+  return numero > 1;
 };
+
 export default primo;

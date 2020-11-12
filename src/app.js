@@ -2,7 +2,7 @@ import express from 'express';
 import expressLayouts from 'express-ejs-layouts';
 import cors from 'cors';
 
-import { appRoutes } from './routes';
+import { appRoutes, apiRoutes } from './routes';
 
 const app = express();
 
@@ -21,5 +21,12 @@ app.use('/app', appRoutes.mdcApp);
 app.use('/app', appRoutes.ordenarApp);
 app.use('/app', appRoutes.primoApp);
 app.use('/app', appRoutes.somadorApp);
+
+app.use('/api', apiRoutes.contadorApi);
+app.use('/api', apiRoutes.fibonacciApi);
+// app.use('/api', apiRoutes.mdcApi);
+// app.use('/api', apiRoutes.ordenarApi);
+app.use('/api', apiRoutes.primoApi);
+app.use('/api', apiRoutes.somadorApi);
 
 export default app;

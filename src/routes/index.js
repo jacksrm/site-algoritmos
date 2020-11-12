@@ -7,6 +7,9 @@ import primoApp from './appRoutes/primo';
 import somadorApp from './appRoutes/somador';
 
 import somadorApi from './apiRoutes/somador';
+import fibonacciApi from './apiRoutes/fibonacci';
+import primoApi from './apiRoutes/primo';
+import contadorApi from './apiRoutes/contador';
 
 
 export const appRoutes = {
@@ -21,4 +24,7 @@ export const appRoutes = {
 
 export const apiRoutes = {
   somadorApi,
+  fibonacciApi,
+  primoApi,
+  contadorApi
 };
