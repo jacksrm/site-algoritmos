@@ -1,4 +1,4 @@
-<%- contentFor('body') %> 
+<%- contentFor('body') %>
 <header class="nav-bar">
   <ul>
     <li><a href="/app">Home</a></li>
@@ -12,4 +12,34 @@
 </header>
 <div class="container">
   <h1>Calcular MDC</h1>
+  <form action="/app/mdc" method="POST" autocomplete="off">
+    <p>Insira os dois números</p>
+    <div class="input-lado-a-lado">
+      <input
+        autofocus
+        class="input-sml"
+        type="number"
+        name="numero1"
+        min="1"
+        required
+        pattern="^[\d,.]+$"
+        placeholder="Ex: 10"
+      />
+      <input
+        class="input-sml"
+        type="number"
+        name="numero2"
+        min="1"
+        required
+        pattern="^[\d,.]+$"
+        placeholder="Ex: 12"
+      />
+    </div>
+    <button type="submit">Tirar o mdc</button>
+  </form>
+  <div class="resultado">
+    <% if(resultado) { %>
+      <p> MDC: <%= resultado %></p>
+      <% } %>
+  </div>
 </div>
