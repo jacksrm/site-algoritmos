@@ -10,6 +10,18 @@
     <li><a href="/app/primo">Número Primo</a></li>
   </ul>
 </header>
-<div class="home">
+<div class="container">
   <h1>Contar números</h1>
+  <p>Insira um número</p>
+
+  <form action="/app/contador" method="POST" autocomplete="off">
+    <input type="number" name="numero" required pattern="^[0-9]+$" />
+    <button type="submit">Contar</button>
+  </form>
+  
+  <div class="resultado">
+    <% if(resultado) { %>
+    <p>Quantidade de números entre 1 e <%= resultado %> é <%= resultado %></p>
+    <% } %>
+  </div>
 </div>

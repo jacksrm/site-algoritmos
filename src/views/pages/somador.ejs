@@ -10,9 +10,9 @@
     <li><a href="/app/primo">Número Primo</a></li>
   </ul>
 </header>
-<div class="home">
+<div class="container">
   <h1>Somar um array</h1>
-  <p>insira os números separados por vírgula</p>
+  <p>Insira os números separados por vírgula</p>
   <form action="/app/somador" method="POST" autocomplete="off">
     <input
       type="text"
@@ -25,7 +25,7 @@
   </form>
 
   <div class="resultado">
-    <% if(resultado && resultado !== 'erro') { %>
+    <% if(resultado) { %>
     <p>Soma: <%= resultado %></p>
     <% } %>
   </div>
