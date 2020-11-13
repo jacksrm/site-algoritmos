@@ -24,7 +24,7 @@ app.use('/app', appRoutes.somadorApp);
 
 app.use('/api', apiRoutes.contadorApi);
 app.use('/api', apiRoutes.fibonacciApi);
-// app.use('/api', apiRoutes.mdcApi);
+app.use('/api', apiRoutes.mdcApi);
 // app.use('/api', apiRoutes.ordenarApi);
 app.use('/api', apiRoutes.primoApi);
 app.use('/api', apiRoutes.somadorApi);

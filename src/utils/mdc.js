@@ -3,6 +3,7 @@ const mdc = (num1, num2) => {
     num1 = parseInt(num1);
     num2 = parseInt(num2);
   }
+
   let teto = num1 <= num2 ? num1 : num2;
 
   for (teto; teto >= 1; teto--) {
@@ -12,4 +13,5 @@ const mdc = (num1, num2) => {
     if (resto1 === 0 && resto2 === 0) return teto;
   }
 };
+
 export default mdc;
