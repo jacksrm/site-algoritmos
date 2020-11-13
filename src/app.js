@@ -27,6 +27,6 @@ app.use('/api', apiRoutes.mdcApi);
 // app.use('/api', apiRoutes.ordenarApi);
 app.use('/api', apiRoutes.primoApi);
 app.use('/api', apiRoutes.somadorApi);
-app.use('/api', apiRoutes.filesListApp);
+app.use('/api', apiRoutes.filesListApi);
 
 export default app;
