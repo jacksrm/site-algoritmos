@@ -5,7 +5,6 @@ import cors from 'cors';
 import { appRoutes, apiRoutes } from './routes';
 
 const app = express();
-
 app.use(cors());
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
@@ -28,5 +27,6 @@ app.use('/api', apiRoutes.mdcApi);
 // app.use('/api', apiRoutes.ordenarApi);
 app.use('/api', apiRoutes.primoApi);
 app.use('/api', apiRoutes.somadorApi);
+app.use('/api', apiRoutes.filesListApp);
 
 export default app;

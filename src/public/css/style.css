@@ -75,8 +75,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  background-image: url('../images/background-ny-city.jpg') ;
   background-position: top right;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 

@@ -11,7 +11,7 @@ import fibonacciApi from './apiRoutes/fibonacci';
 import primoApi from './apiRoutes/primo';
 import contadorApi from './apiRoutes/contador';
 import mdcApi from './apiRoutes/mdc';
-
+import filesListApi from './apiRoutes/filesList';
 
 export const appRoutes = {
   contadorApp,
@@ -28,5 +28,6 @@ export const apiRoutes = {
   fibonacciApi,
   primoApi,
   contadorApi,
-  mdcApi
+  mdcApi,
+  filesListApi,
 };

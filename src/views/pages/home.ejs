@@ -1,4 +1,4 @@
-<%- contentFor('body') %> 
+<%- contentFor('body') %>
 <header class="nav-bar">
   <ul>
     <li><a class="selected" href="/app">Home</a></li>
@@ -12,11 +12,14 @@
 </header>
 <div class="container no-space-around">
   <h1>Algoritmos - Projeto</h1>
-  <p>Este é um site desenvolvido como trabalho da disciplina de Desenvolvimento de Software em Nuvem.</p>
+  <p>
+    Este é um site desenvolvido como trabalho da disciplina de Desenvolvimento
+    de Software em Nuvem.
+  </p>
   <h1>Dev. Team</h1>
   <ul>
-    <% equipe.map(integrante => { %> 
-      <li> <%= integrante  %>  </li>
-    <% }) %> 
+    <% equipe.map(integrante => { %>
+    <li><%= integrante %></li>
+    <% }) %>
   </ul>
 </div>

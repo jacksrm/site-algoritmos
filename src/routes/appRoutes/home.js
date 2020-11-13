@@ -1,4 +1,5 @@
 import express from 'express';
+import images from '../../utils/listImages'
 
 const route = express.Router();
 
@@ -10,7 +11,8 @@ route.get('/', (req, res) => {
       'Dante Dantas',
       'Rafael Muleque',
       'João Monteiro'
-    ]
+    ],
+    images,
   });
 });
 export default route;

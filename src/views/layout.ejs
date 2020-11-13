@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="http://localhost:3333/css/style.css">
-  <title>Site Algoritmos</title>
-</head>
-<body>
-  <%- body %>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="http://localhost:3333/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="http://localhost:3333/css/backgroundChange.css"
+    />
+    <title>Site Algoritmos</title>
+  </head>
+  <body>
+    <%- body %>
+  </body>
+
+  <script>
+    function changeBg(bg) {
+      let body = document.querySelector('body');
+      body.setAttribute('class', `bg-${bg}`);
+    }
+
+    changeBg(1);
+    
+    let bgNum = 2;
+    setInterval(() =>{
+      if(bgNum > 12) bgNum = 1;
+      changeBg(bgNum);
+      bgNum++;
+    }, 10 * 1000);
+  </script>
 </html>
