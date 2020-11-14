@@ -1,10 +1,9 @@
 import express from 'express';
-import images from '../../utils/listImages';
 
 const route = express.Router();
 
-route.get('/', (req, res) => {
-  res.render('pages/home', {
+route.get('/teste', (req, res) => {
+  res.render('pages/teste', {
     equipe: [
       'Jacson Rodrigues',
       'Dante Dantas',
@@ -19,6 +18,7 @@ route.get('/', (req, res) => {
       'https://github.com/joaomonteiroSN',
       'https://github.com/Mayh6m',
     ],
-  });
+  })
 });
+
 export default route;

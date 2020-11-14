@@ -18,8 +18,17 @@
   </p>
   <h1>Dev. Team</h1>
   <ul>
-    <% equipe.map(integrante => { %>
-    <li><%= integrante %></li>
+    <% equipe.map((integrante, index) => { %>
+    <li>
+      <a target="_blank" class="github" href="<%= github[index]%>">
+        <div></div>
+        <span><%= integrante %></span>
+        <img
+          src="http://localhost:3333/images/github-logo-white.svg"
+          alt="Logo by: Dave Gandy"
+        />
+      </a>
+    </li>
     <% }) %>
   </ul>
 </div>
