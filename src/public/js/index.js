@@ -10,6 +10,14 @@ function fadeOut() {
 
 window.onload = fadeIn();
 
+const cards = document.querySelectorAll('a.card');
+// console.log(cards)
+
+for(let i = 0; i < cards.length; i++) {
+  // console.log(cards[i]);
+  cards[i].setAttribute('onmousedown', 'fadeOut()');
+}
+
 document.querySelector('header').setAttribute('onmousedown',"fadeOut()");
 
 /* ---------------Troca de background--------------- */

@@ -15,7 +15,6 @@
   src: url('../fonts/CaviarDreams_Bold.ttf');
 }
 
-
 /* width */
 ::-webkit-scrollbar {
   width: 0.5rem;
@@ -25,7 +24,7 @@
 ::-webkit-scrollbar-track {
   display: none;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #ffffff67;
@@ -45,12 +44,12 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type='number'] {
   -moz-appearance: textfield;
 }
 
-
-input::-webkit-input-placeholder { /* Firefox 18- */
+input::-webkit-input-placeholder {
+  /* Firefox 18- */
   font-size: 1.2rem;
   font-weight: 400;
   color: #333333;
@@ -77,9 +76,54 @@ body {
   overflow-y: auto;
 }
 
-h1, span {
-  font-family: 'Playfair Display SC', serif;
+h1 {
   color: #ebebeb;
+  font-family: 'Caviar Dreams', 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+span {
+  font-family: 'Poppins', sans-serif;
+  font-weight: thin;
+  font-size: 1.7rem;
+}
+
+#site-title {
+  margin: 10vh 0;
+  font-size: 2.7rem;
+}
+
+header {
+  margin: 15px;
+  margin-right: auto;
+  float: left;
+}
+
+header a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ffffff;
+  font-size: 4rem;
+  border-radius: 40px;
+  height: 80px;
+  width: 80px;
+  filter: invert(1);
+  transition: all 200ms;
+}
+
+header a:hover {
+  filter: invert(0);
+  /* transform: scale(1.1, 1.1); */
+  animation: pulse 600ms infinite;
+}
+
+header a img {
+  height: 60px;
+  width: 60px;
 }
 
 section {
@@ -89,18 +133,75 @@ section {
   width: 100vw;
 }
 
-#section-1 {
-  margin-top: 15vh;
-}
-
 .card {
+  display: flex;
   border: 1px solid #ffffff;
   height: 80vh;
   width: 40vw;
   margin: 0.5vh;
   border-radius: 5px;
+  transition: all 200ms;
+  text-decoration: none;
+  color: transparent;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
 }
 
+.card span {
+  font-family: 'Poppins', sans-serif;
+  color: inherit;
+  background-color: inherit;
+  height: inherit;
+  width: inherit;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  font-size: 2rem;
+}
+
+.card:hover {
+  background-color: #0000008a;
+  transform: scale(1.05, 1.05);
+  /* filter: contrast(1.5) ; */
+  color: #fff;
+}
+
+#somador {
+  background-image: url('../images/background1.jpg');
+  background-position: top center;
+  background-size: cover;
+}
+
+#fibonacci {
+  background-image: url('../images/background2.jpg');
+  background-position: top center;
+  background-size: cover;
+}
+
+#mdc {
+  background-image: url('../images/background3.jpg');
+  background-position: top center;
+  background-size: cover;
+}
+
+#ordenar {
+  background-image: url('../images/background4.jpg');
+  background-position: top center;
+  background-size: cover;
+}
+
+#contador {
+  background-image: url('../images/background5.jpg');
+  background-position: top center;
+  background-size: cover;
+}
+
+#primo {
+  background-image: url('../images/background6.jpg');
+  background-position: top center;
+  background-size: cover;
+}
 
 footer {
   display: flex;
@@ -136,7 +237,7 @@ footer a.github {
   font-size: 1.6rem;
   color: #ebebeb;
   background-color: #000;
-  border: 1px solid #ebebeb ;
+  border: 1px solid #ebebeb;
   text-decoration: none;
   text-align: center;
   margin: 0 10px;
@@ -169,11 +270,40 @@ footer a.github img {
 }
 
 @keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeout {
-  from { opacity: 1; }
-  to   { opacity: 0; }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
+
+@keyframes rotation {
+  from { transform:  rotate(0deg);}
+  to { transform: rotate(360deg);}
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+/* 
+@keyframes circleBorder {
+  from {
+    border: none;
+  }
+
+  to {
+    border: 1px solid #fff;
+  }
+} */

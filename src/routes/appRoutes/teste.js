@@ -18,6 +18,7 @@ route.get('/teste', (req, res) => {
       'https://github.com/joaomonteiroSN',
       'https://github.com/Mayh6m',
     ],
+    header: null
   })
 });
 
