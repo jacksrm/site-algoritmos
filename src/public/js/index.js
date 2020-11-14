@@ -12,6 +12,7 @@ window.onload = fadeIn();
 
 document.querySelector('header').setAttribute('onmousedown',"fadeOut()");
 
+/* ---------------Troca de background--------------- */
 // function changeBg(bg) {
 //   let body = document.querySelector('body');
 //   body.setAttribute('class', `bg-${bg}`);
