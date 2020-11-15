@@ -19,6 +19,7 @@ route.get('/', (req, res) => {
       'https://github.com/joaomonteiroSN',
       'https://github.com/Mayh6m',
     ],
+    header: false
   });
 });
 export default route;

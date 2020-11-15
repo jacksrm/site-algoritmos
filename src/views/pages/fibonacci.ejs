@@ -1,38 +1,25 @@
 <%- contentFor('body') %>
-<header class="nav-bar">
-  <ul>
-    <li><a href="/app">Home</a></li>
-    <li><a href="/app/somador">Somador</a></li>
-    <li><a class="selected" href="/app/fibonacci">Fibonacci</a></li>
-    <li><a href="/app/mdc">MDC</a></li>
-    <li><a href="/app/ordenar">Ordenação</a></li>
-    <li><a href="/app/contador">Contagem</a></li>
-    <li><a href="/app/primo">Número Primo</a></li>
-  </ul>
-</header>
-
-<div class="container">
-  <h1>Fibonacci</h1>
-
-  <form action="/app/fibonacci" method="POST" autocomplete="off">
-    <p>Digite a quantidade de números da sequência:</p>
-
-    <input
-      class="input-sml"
-      type="number"
-      name="quantidade"
-      required
-      autofocus
-      placeholder="Ex: 10"
-    />
-
-    <button type="submit">Ver sequência</button>
-  </form>
-
-  <div class="resultado">
-    <% if(resultado) { %>
-    <p>Sequência de Fibonacci é:</p>
-    <p><%= resultado %></p>
-    <% } %>
+<section id="fibonacci" class="algoritmo">
+  <div class="dark-filter">
+    <h1>Fibonacci</h1>
+    <div class="container">
+      <form action="/app/fibonacci" method="POST" autocomplete="off">
+        <p>Digite a quantidade de números da sequência:</p>
+        <input
+          class="input-sml"
+          type="number"
+          name="quantidade"
+          required
+          autofocus
+          placeholder="Ex: 10"
+        />
+        <button type="submit">Ver sequência</button>
+      </form>
+      <div class="resultado">
+        <% if(resultado) { %>
+        <p>Sequência de Fibonacci é: <%= resultado %></p>
+        <% } %>
+      </div>
+    </div>
   </div>
-</div>
+</section>

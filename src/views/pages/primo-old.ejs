@@ -1,0 +1,39 @@
+<%- contentFor('body') %>
+<header class="nav-bar">
+  <ul>
+    <li><a href="/app">Home</a></li>
+    <li><a href="/app/somador">Somador</a></li>
+    <li><a href="/app/fibonacci">Fibonacci</a></li>
+    <li><a href="/app/mdc">MDC</a></li>
+    <li><a href="/app/ordenar">Ordenação</a></li>
+    <li><a href="/app/contador">Contagem</a></li>
+    <li><a class="selected" href="/app/primo">Número Primo</a></li>
+  </ul>
+</header>
+<div class="container">
+  <h1>Será que é primo?</h1>
+
+  <form action="/app/primo" method="POST" autocomplete="off">
+    <p>
+      Inserir o número o qual deseja verificar em sua existência se é
+      pertencente à categoria de números primos.
+    </p>
+    <input
+      class="input-sml"
+      type="number"
+      min="1"
+      required
+      autofocus
+      pattern="^[\d]+$"
+      name="entrada"
+      placeholder="Ex: 11"
+    />
+    <button type="submit">Averiguar</button>
+  </form>
+
+  <div class="resultado">
+    <% if(resultado) {%>
+    <p>Número <%= entrada %> <%= resultado %></p>
+    <% } %>
+  </div>
+</div>

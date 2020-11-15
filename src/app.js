@@ -4,9 +4,6 @@ import cors from 'cors';
 
 import { appRoutes, apiRoutes } from './routes';
 
-import teste from './routes/appRoutes/teste';
-import somadorTeste from './routes/appRoutes/somador-teste';
-
 const app = express();
 app.use(cors());
 app.set('views', __dirname + '/views');
@@ -31,8 +28,5 @@ app.use('/api', apiRoutes.mdcApi);
 app.use('/api', apiRoutes.primoApi);
 app.use('/api', apiRoutes.somadorApi);
 app.use('/api', apiRoutes.filesListApi);
-
-app.use(teste);
-app.use(somadorTeste);
 
 export default app;

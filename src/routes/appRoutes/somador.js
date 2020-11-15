@@ -5,7 +5,7 @@ import somador from '../../utils/somador';
 const route = express.Router();
 
 route.get('/somador', (req, res) => {
-  res.render('pages/somador', { resultado: null });
+  res.render('pages/somador', { resultado: null, header: true });
 });
 
 route.post('/somador', (req, res) => {
@@ -13,7 +13,7 @@ route.post('/somador', (req, res) => {
 
   const resultado = somador(array);
   
-  return res.render('pages/somador', { resultado });
+  return res.render('pages/somador', { resultado, header: true });
 });
 
 export default route;

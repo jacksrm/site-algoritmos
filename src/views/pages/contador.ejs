@@ -1,36 +1,27 @@
 <%- contentFor('body') %>
-<header class="nav-bar">
-  <ul>
-    <li><a href="/app">Home</a></li>
-    <li><a href="/app/somador">Somador</a></li>
-    <li><a href="/app/fibonacci">Fibonacci</a></li>
-    <li><a href="/app/mdc">MDC</a></li>
-    <li><a href="/app/ordenar">Ordenação</a></li>
-    <li><a class="selected" href="/app/contador">Contagem</a></li>
-    <li><a href="/app/primo">Número Primo</a></li>
-  </ul>
-</header>
-<div class="container">
-  <h1>Contar números</h1>
-
-  <form action="/app/contador" method="POST" autocomplete="off">
-    <p>Insira um número</p>
-    <input
-      class="input-sml"
-      type="number"
-      name="numero"
-      required
-      autofocus
-      min="1"
-      pattern="^[0-9]+$"
-      placeholder="Ex: 25"
-    />
-    <button type="submit">Contar</button>
-  </form>
-
-  <div class="resultado">
-    <% if(resultado) { %>
-    <p>Quantidade de números entre 1 e <%= resultado %> é <%= resultado %></p>
-    <% } %>
+<section id="contador" class="algoritmo">
+  <div class="dark-filter">
+    <h1>Contar números</h1>
+    <div class="container">
+      <form action="/app/contador" method="POST" autocomplete="off">
+        <p>Insira um número</p>
+        <input
+          class="input-sml"
+          type="number"
+          name="numero"
+          required
+          autofocus
+          min="1"
+          pattern="^[0-9]+$"
+          placeholder="Ex: 25"
+        />
+        <button type="submit">Contar</button>
+      </form>
+      <div class="resultado">
+        <% if(resultado) { %>
+        <p>Quantidade de números entre 1 e <%= resultado %> é <%= resultado %></p>
+        <% } %>
+      </div>
+    </div>
   </div>
-</div>
+</section>

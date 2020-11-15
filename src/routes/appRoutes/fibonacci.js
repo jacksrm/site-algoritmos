@@ -4,7 +4,7 @@ import fibonacci from '../../utils/fibonacci';
 const route = express.Router();
 
 route.get('/fibonacci', (req, res) => {
-  res.render('pages/fibonacci', { resultado: null });
+  res.render('pages/fibonacci', { resultado: null, header: true });
 });
 
 route.post('/fibonacci', (req, res) => {
@@ -12,7 +12,7 @@ route.post('/fibonacci', (req, res) => {
 
   const resultado = fibonacci(quantidade);
 
-  return res.render('pages/fibonacci', { resultado });
+  return res.render('pages/fibonacci', { resultado, header: true });
 });
 
 export default route;

@@ -5,7 +5,7 @@ import contador from '../../utils/contador';
 const route = express.Router();
 
 route.get('/contador', (req, res) => {
-  res.render('pages/contador', { resultado: null });
+  res.render('pages/contador', { resultado: null, header: true });
 });
 
 route.post('/contador', (req, res) => {
@@ -13,7 +13,7 @@ route.post('/contador', (req, res) => {
 
   const resultado = contador(numero);
 
-  return res.render('pages/contador', { resultado });
+  return res.render('pages/contador', { resultado, header: true });
 });
 
 export default route;

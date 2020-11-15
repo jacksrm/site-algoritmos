@@ -1,0 +1,34 @@
+<%- contentFor('body') %>
+<header class="nav-bar">
+  <ul>
+    <li><a class="selected" href="/app">Home</a></li>
+    <li><a href="/app/somador">Somador</a></li>
+    <li><a href="/app/fibonacci">Fibonacci</a></li>
+    <li><a href="/app/mdc">MDC</a></li>
+    <li><a href="/app/ordenar">Ordenação</a></li>
+    <li><a href="/app/contador">Contagem</a></li>
+    <li><a href="/app/primo">Número Primo</a></li>
+  </ul>
+</header>
+<div class="container no-space-around">
+  <h1>Algoritmos - Projeto</h1>
+  <p>
+    Este é um site desenvolvido como trabalho da disciplina de Desenvolvimento
+    de Software em Nuvem.
+  </p>
+  <h1>Dev. Team</h1>
+  <ul>
+    <% equipe.map((integrante, index) => { %>
+    <li>
+      <a target="_blank" class="github" href="<%= github[index]%>">
+        <div></div>
+        <span><%= integrante %></span>
+        <img
+          src="http://localhost:3333/images/github-logo-white.svg"
+          alt="Logo by: Dave Gandy"
+        />
+      </a>
+    </li>
+    <% }) %>
+  </ul>
+</div>

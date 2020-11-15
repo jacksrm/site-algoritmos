@@ -1,21 +1,31 @@
 <%- contentFor('body') %>
-<header class="nav-bar">
-  <ul>
-    <li><a class="selected" href="/app">Home</a></li>
-    <li><a href="/app/somador">Somador</a></li>
-    <li><a href="/app/fibonacci">Fibonacci</a></li>
-    <li><a href="/app/mdc">MDC</a></li>
-    <li><a href="/app/ordenar">Ordenação</a></li>
-    <li><a href="/app/contador">Contagem</a></li>
-    <li><a href="/app/primo">Número Primo</a></li>
-  </ul>
-</header>
-<div class="container no-space-around">
-  <h1>Algoritmos - Projeto</h1>
-  <p>
-    Este é um site desenvolvido como trabalho da disciplina de Desenvolvimento
-    de Software em Nuvem.
-  </p>
+<h1 id="site-title">Algoritmos Básicos</h1>
+<section id="section-1">
+  <a class="card" id="somador" href="/app/somador ">
+    <span>Somador</span> 
+  </a>
+  <a class="card" id="fibonacci" href="/app/fibonacci">
+    <span>Fibonacci</span> 
+  </a>
+</section>
+<section>
+  <a class="card" id="mdc" href="/app/mdc">
+    <span>MDC</span> 
+  </a>
+  <a class="card" id="ordenar" href="/app/ordenar">
+    <span>Quick Sort</span> 
+  </a>
+</a>
+</section>
+<section>
+  <a class="card" id="contador" href="/app/contador">
+    <span>Contador</span> 
+  </a>
+  <a class="card" id="primo" href="/app/primo">
+    <span>Primo</span> 
+  </a>
+</section>
+<footer>
   <h1>Dev. Team</h1>
   <ul>
     <% equipe.map((integrante, index) => { %>
@@ -31,4 +41,5 @@
     </li>
     <% }) %>
   </ul>
-</div>
+</footer>
+
