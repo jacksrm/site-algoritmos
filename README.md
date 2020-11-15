@@ -18,8 +18,8 @@ implemente os algoritmos a seguir, cada um em uma página diferente:
 6. Contagem: Dado um valor N, conte quantos valores inteiros existem entre 1 (inclusive) e N (inclusive).
 
 ## O projeto foi desenvolvido por:
-→ Jacson Rodrigues [GitHub](https://github.com/jacksrm/) - Líder da equipe, designer e programador.
-→ Matheus Rodriges [GitHub](https://github.com/Mayh6m) - Designer e programador.
-→ Rafael Tavares [GitHub](https://github.com/RafaelD3v) - Programador.
-→ João Monteiro [GitHub](https://github.com/joaomonteiroSN) - Programador.
-→ Dante Dantas [GitHub](https://github.com/Dantedod) - Programador.
+- Jacson Rodrigues [GitHub](https://github.com/jacksrm/) - Líder da equipe, designer e programador.
+- Matheus Rodriges [GitHub](https://github.com/Mayh6m) - Designer e programador.
+- Rafael Tavares [GitHub](https://github.com/RafaelD3v) - Programador.
+- João Monteiro [GitHub](https://github.com/joaomonteiroSN) - Programador.
+- Dante Dantas [GitHub](https://github.com/Dantedod) - Programador.
