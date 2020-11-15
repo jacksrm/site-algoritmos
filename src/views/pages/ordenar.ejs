@@ -1,8 +1,25 @@
 <%- contentFor('body') %> 
 <section id="ordenar" class="algoritmo">
   <div class="dark-filter">
-    <h1>Ordenar com Quick Sort</h1>
+    <h1>Ordenar um array</h1>
     <div class="container">
+      <form action="/app/ordenar" method="POST" autocomplete="off">
+        <p>Digite números aleatórios :3</p>
+        <input
+          type="text"
+          name="array"
+          required
+          autofocus
+          pattern="^[\d\-,.]+$"
+          placeholder="Ex: 1,2,3,4,5"
+        />
+        <button type="submit">Ordenar</button>
+      </form>
+      <div class="resultado">
+        <% if(resultado) { %>
+        <p>Ordenação: <%= resultado %></p>
+        <% } %>
+      </div>
     </div>
   </div>
 </section>
