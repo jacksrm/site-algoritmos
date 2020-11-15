@@ -1,13 +1,13 @@
 # Site Algoritmos
 
-Este é um site desenvovido como trabalho para a disciplida de Desenvolvimento de Software
+Este é um site desenvolvido como trabalho para a disciplida de Desenvolvimento de Software
 em Nuvem do curso de Análise e Desenvolvimento de Sistemas da Universidade de Fortaeza - 
 Unifor.
 
 Foi utilizado na composição deste projeto Node.js para o servidor web com os módulos Express
 e EJS como módulo de view, alem de CSS e Javascript para composição do design das páginas.
 
-O objetivo deste projeto é criar um site, com renderização da view via server-side, quem 
+O objetivo deste projeto é criar um site, com renderização da view via server-side, que 
 implemente os algoritmos a seguir, cada um em uma página diferente:
 
 1. Número é primo: Um número inteiro positivo n é primo se for divisível apenas por 1 e por n.
@@ -18,8 +18,8 @@ implemente os algoritmos a seguir, cada um em uma página diferente:
 6. Contagem: Dado um valor N, conte quantos valores inteiros existem entre 1 (inclusive) e N (inclusive).
 
 ## O projeto foi desenvolvido por:
-- Jacson Rodrigues [GitHub](https://github.com/jacksrm/) - Líder da equipe, designer e programador.
-- Matheus Rodriges [GitHub](https://github.com/Mayh6m) - Designer e programador.
-- Rafael Tavares [GitHub](https://github.com/RafaelD3v) - Programador.
-- João Monteiro [GitHub](https://github.com/joaomonteiroSN) - Programador.
-- Dante Dantas [GitHub](https://github.com/Dantedod) - Programador.
+- Jacson Rodrigues [→GitHub←](https://github.com/jacksrm/) - Líder da equipe, designer e programador.
+- Matheus Rodriges [→GitHub←](https://github.com/Mayh6m) - Designer e programador.
+- Rafael Tavares [→GitHub←](https://github.com/RafaelD3v) - Programador.
+- João Monteiro [→GitHub←](https://github.com/joaomonteiroSN) - Programador.
+- Dante Dantas [→GitHub←](https://github.com/Dantedod) - Programador.
