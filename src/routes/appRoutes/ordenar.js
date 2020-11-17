@@ -12,12 +12,10 @@ route.get('/ordenar', (req, res) => {
 route.post('/ordenar', (req, res) => {
   const { vetor } = req.body;
 
+  const entry = toArray(vetor);
   const resultado = quick(toArray(vetor));
-
-  console.log(resultado);
   
-  return res.render('pages/ordenar', { resultado, header: true });
-
+  return res.render('pages/ordenar', { entry, resultado, header: true });
 });
 
 export default route;
