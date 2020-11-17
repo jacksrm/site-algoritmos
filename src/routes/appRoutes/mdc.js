@@ -9,7 +9,7 @@ route.get('/mdc', (req, res) => {
 
 route.post('/mdc', (req, res) => {
   const { numero1, numero2 } = req.body;
-
+  
   const resultado = mdc(numero1, numero2);
 
   return res.render('pages/mdc', { resultado, header: true });

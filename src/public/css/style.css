@@ -142,11 +142,15 @@ header.arrow-back a img {
   justify-content: center;
   background-color: #020202;
   /* border-bottom: 1px solid #ffffff; */
-  box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px 0px  /* rgba(255, 255, 255, 0.5) */;
   z-index: 7000;
 }
 
 #site-title {
+  color: #ffffffd7;
+  /* text-shadow: 2px 2px 0px #fff ;
+  -webkit-text-stroke: 1px #fff;
+  letter-spacing: 2px; */
   font-size: 3rem;
 }
 
@@ -226,6 +230,7 @@ footer {
 footer h1 {
   margin-top: 10vh;
   color: #fff;
+  border-bottom: 1px solid linear;
 }
 
 footer ul {
@@ -493,8 +498,20 @@ footer a.github img {
   background-color: #170606;
 }
 
+#fibonacci #slider {
+  background-color: #06261E;
+}
+
+#mdc #slider {
+  background-color: #571F06;
+}
+
 #ordenar #slider {
   background-color: #170606;
+}
+
+#primo #slider {
+  background-color: #130507;
 }
 
 .slide-on {
@@ -506,6 +523,7 @@ footer a.github img {
   width: 0%;
 }
 
+.slide-off p,
 .slide-off h2,
 .slide-off input,
 .slide-off button {

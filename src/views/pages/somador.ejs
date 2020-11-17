@@ -1,6 +1,8 @@
 <%- contentFor('body') %>
 <section id="somador" class="algoritmo">
+
   <div id="slide-area" class="slide-area"></div>
+
   <div id="slider" class="slide-menu slide-off">
     <h2>Gerar array automático</h2>
     <form action="/app/somador/generate-array" method="POST" autocomplete="off">
@@ -9,10 +11,14 @@
       <input type="number" name="max" placeholder="Valor máx" />
       <button type="submit">gerar</button>
     </form>
+    <h2>Informações do Algoritmo</h2>
+    <p>Algoritmo com o objetivo de somar todos os elementos de um array.</p>
   </div>
+
   <div class="flip-container">
-    <button id="btn-menu" class="flipper"><</button>
+    <button id="btn-menu" class="flipper" ><</button>
   </div>
+
   <div class="dark-filter">
     <h1>Somar um array</h1>
     <div class="container">
