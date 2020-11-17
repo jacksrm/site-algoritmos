@@ -1,68 +1,54 @@
+/* -------- FONTS IMPORT -------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
 
-@font-face {
-  font-family: 'Caviar Dreams';
-  font-weight: normal;
-  font-style: normal;
-  src: url('../fonts/CaviarDreams.ttf');
-}
-
-@font-face {
-  font-family: 'Caviar Dreams';
-  font-weight: bold;
-  font-style: normal;
-  src: url('../fonts/CaviarDreams_Bold.ttf');
-}
-
-/* width */
+/* -------- SCROLLBAR STYLE -------- */
 ::-webkit-scrollbar {
   width: 0.8rem;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   display: none;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #ffffff67;
   border-radius: 5px;
   transition: background-color 300ms;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover,
 ::-webkit-scrollbar-thumb:focus {
   background-color: #ffffff;
 }
 
-/* Selection style */
+/* -------- SELECTION STYLE -------- */
 ::selection {
   background: #ffffff;
   color: #000000;
 }
 
-/* Chrome, Safari, Edge, Opera */
+/* -------- REMOVE INPUT NUMBER STYLE -------- */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-/* Firefox */
 input[type='number'] {
   -moz-appearance: textfield;
 }
 
+/* -------- PLACEHOLDER STYLE -------- */
 input::-webkit-input-placeholder {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   /* Firefox 18- */
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 200;
   color: #e4e4e48c;
 }
 
+/* -------- NORMALIZING -------- */
 * {
   margin: 0;
   outline: 0;
@@ -70,6 +56,7 @@ input::-webkit-input-placeholder {
   box-sizing: border-box;
 }
 
+/* -------- GENERAL STYLE -------- */
 html {
   background-color: #000000;
 }
@@ -78,6 +65,7 @@ body {
   height: 100vh;
   width: 100vw;
   display: flex;
+  min-width: 380px;
   align-items: center;
   flex-direction: column;
   overflow: hidden;
@@ -86,17 +74,20 @@ body {
 
 p,
 span,
-input,
-button {
-  font-family: 'Poppins', sans-serif;
+input {
+  font-family: 'Barlow Condensed', sans-serif;
   color: #fff;
   font-size: 1.5rem;
+  font-weight: 400;
 }
 
-h1 {
+h1,
+h2,
+button {
   color: #ebebeb;
-  font-family: 'Caviar Dreams', 'Poppins', sans-serif;
-  font-weight: bold;
+  font-family: 'Big Shoulders Display', cursive;
+  text-transform: uppercase;
+  font-weight: 700;
   font-size: 3rem;
   text-align: center;
 }
@@ -106,26 +97,19 @@ span {
   font-size: 1.7rem;
 }
 
-#site-title {
-  margin: 10vh 0;
-  font-size: 2.7rem;
-}
-
-header {
+/* -------- HEADER ARROW BACK STYLE -------- */
+header.arrow-back {
   position: absolute;
-  margin-right: auto;
   left: 15px;
   top: 15px;
 }
 
-header a {
+header.arrow-back a {
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: #fff;
   background-color: #ffffff;
-  font-size: 4rem;
   border-radius: 40px;
   height: 80px;
   width: 80px;
@@ -133,17 +117,41 @@ header a {
   transition: all 200ms;
 }
 
-header a:hover, 
-header a:focus {
+header.arrow-back a:hover,
+header.arrow-back a:focus {
   filter: invert(0);
   animation: pulse 2s infinite;
 }
 
-header a img {
+header.arrow-back a img {
   height: 60px;
   width: 60px;
 }
 
+/* -------- SITE HEADER STYLE -------- */
+#section-1 {
+  margin-top: 25vh;
+}
+
+.site-header {
+  position: fixed;
+  display: flex;
+  height: 18vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  background-color: #020202;
+  /* border-bottom: 1px solid #ffffff; */
+  box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.5);
+  z-index: 7000;
+}
+
+#site-title {
+  font-size: 3rem;
+}
+
+
+/* -------- HOME MAIN STYLE -------- */
 section {
   display: flex;
   justify-content: center;
@@ -153,10 +161,9 @@ section {
 
 .card {
   display: flex;
-  height: 80vh;
+  height: 70vh;
   width: 40vw;
   margin: 0.5vh;
-  /* border-radius: 5px; */
   transition: all 200ms;
   text-decoration: none;
   align-items: center;
@@ -164,66 +171,50 @@ section {
   background-color: transparent;
 }
 
-.card span {
-  display: none;
-  font-family: 'Poppins', sans-serif;
-  color: #fff;
-  background-color: inherit;
-  height: inherit;
-  width: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 2rem;
-  transition: all 200ms;
-}
-
 .card:hover,
 .card:focus {
-  background-color: #0000008a;
   transform: scale(1.05, 1.05);
+  filter: contrast(1.2);
 }
 
-.card:hover span,
-.card:focus span {
-  display: flex;
-}
-
+/* -------- GENERAL BACKGROUND IMAGES -------- */
 #somador {
-  background-image: url('../images/background10.jpg');
+  background-image: url('../images/bg-cards/SOMADOR.svg');
   background-position: top center;
   background-size: cover;
 }
 
 #fibonacci {
-  background-image: url('../images/background2.jpg');
+  background-image: url('../images/bg-cards/FIBONACCI.svg');
   background-position: top center;
   background-size: cover;
 }
 
 #mdc {
-  background-image: url('../images/background3.jpg');
+  background-image: url('../images/bg-cards/MDC.svg');
   background-position: top center;
   background-size: cover;
 }
 
 #ordenar {
-  background-image: url('../images/background4.jpg');
+  background-image: url('../images/background11.jpg');
   background-position: top center;
   background-size: cover;
 }
 
 #contador {
-  background-image: url('../images/background5.jpg');
+  background-image: url('../images/background12.jpg');
   background-position: top center;
   background-size: cover;
 }
 
 #primo {
-  background-image: url('../images/background7.jpg');
+  background-image: url('../images/bg-cards/PRIMO.svg');
   background-position: top center;
   background-size: cover;
 }
 
+/* -------- FOOTER STYLE -------- */
 footer {
   display: flex;
   flex-direction: column;
@@ -280,16 +271,14 @@ footer a.github img {
   margin-bottom: 10px;
 }
 
+/* -------- ALGORITHM INPUT AND SHOW STYLE -------- */
 .algoritmo {
-  height: 70vh;
-  width: 70vw;
-  min-height: 600px;
-  min-width: 1250px;
+  height: 84vh;
+  width: 84vw;
   justify-content: space-around;
   margin: auto 0;
-  background-image: url('../images/background1.jpg');
-  background-size: cover;
   border-radius: 5px;
+  position: relative;
 }
 
 .algoritmo .dark-filter {
@@ -312,7 +301,7 @@ footer a.github img {
   flex-direction: column;
   height: 90%;
   width: 50%;
-  padding-top: 1%;
+  padding-top: 2%;
   border-left: 2px solid #fff;
 }
 
@@ -344,10 +333,12 @@ footer a.github img {
 
 .container form button {
   background-color: transparent;
-  border: 2px solid #fff;
-  height: 50px;
-  border-radius: 25px;
-  padding: 0 15px;
+  border: 2px solid #ffffff91;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  border-radius: 5px;
+  padding: 5px 15px;
   cursor: pointer;
   transition: all 200ms;
 }
@@ -355,7 +346,7 @@ footer a.github img {
 .container form button:hover,
 .container form button:focus {
   transform: scale(1.1, 1.1);
-  background-color: #fff;
+  background-color: #ffffff91;
   color: #000000;
   font-weight: 600;
 }
@@ -380,6 +371,148 @@ footer a.github img {
   padding: 0 15px;
 }
 
+.resultado p {
+  margin-bottom: 15px;
+  width: 100%;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+/* -------- FLIP BUTTON STYLE -------- */
+.flip-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+  z-index: 6000;
+}
+
+.flip-container button {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
+  background-color: transparent;
+  margin: 15px;
+  border: none;
+  font-size: 4rem;
+  height: 40px;
+  width: 40px;
+  transition: all 600ms;
+}
+
+.flip-on {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180);
+}
+
+.flip-off {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0);
+}
+
+/* -------- SLIDE AREA STYLE -------- */
+.slide-area {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #00000083;
+  z-index: 4000;
+  transition: all 600ms;
+}
+
+.slide-area-on {
+  width: 100%;
+}
+
+.slide-area-off {
+  width: 0%;
+}
+
+.slide-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  right: 0;
+  height: 100%;
+  transition: all 600ms;
+  width: 0;
+  z-index: 5000;
+  content: none;
+}
+
+.slide-menu h2 {
+  font-size: 1.3rem;
+  margin: 25px 0;
+}
+
+.slide-menu form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.slide-menu input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  width: 100px;
+  padding: 0 15px;
+  margin: 2% 2%;
+}
+
+.slide-menu button {
+  background-color: transparent;
+  border: 2px solid #ffffff91;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  border-radius: 5px;
+  padding: 0px 15px;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.slide-menu button:hover,
+.slide-menu button:focus {
+  transform: scale(1.1, 1.1);
+  background-color: #fff;
+  color: #000000;
+  font-weight: 400;
+}
+
+#somador #slider {
+  background-color: #170606;
+}
+
+#ordenar #slider {
+  background-color: #170606;
+}
+
+.slide-on {
+  border: 1px solid #fff;
+  width: 50%;
+}
+
+.slide-off {
+  width: 0%;
+}
+
+.slide-off h2,
+.slide-off input,
+.slide-off button {
+  display: none;
+}
+
+/* -------- STYLE FOR FADE IN AND OUT EFFECT -------- */
 .transparent {
   display: none;
 }
@@ -392,6 +525,7 @@ footer a.github img {
   animation: fadeout 400ms;
 }
 
+/* -------- KEYFRAME FADE IN AND OUT -------- */
 @keyframes fadein {
   from {
     opacity: 0;
@@ -410,15 +544,7 @@ footer a.github img {
   }
 }
 
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
+/* -------- PULSE KEYFRAMES -------- */
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -431,6 +557,7 @@ footer a.github img {
   }
 }
 
+/* -------- RESPONSIVE STYLE -------- */
 @media (max-width: 860px) {
   section {
     flex-direction: column;
@@ -464,5 +591,9 @@ footer a.github img {
   .algoritmo .container {
     border: none;
     width: auto;
+  }
+
+  .slide-on {
+    width: 75%;
   }
 }

@@ -1,24 +1,20 @@
 function fadeIn() {
-  let body = document.getElementById('transition');
+  let body = document.getElementById('body');
   body.setAttribute('class', 'fade-in');
 }
 
 function fadeOut() {
-  let body = document.getElementById('transition');
+  let body = document.getElementById('body');
   body.setAttribute('class', 'fade-out');
 }
 
 window.onload = fadeIn();
 
-const cards = document.querySelectorAll('a.card');
-// console.log(cards)
+let cards = document.querySelectorAll('.card');
 
 for(let i = 0; i < cards.length; i++) {
-  // console.log(cards[i]);
   cards[i].setAttribute('onmousedown', 'fadeOut()');
 }
-
-document.querySelector('header').setAttribute('onmousedown',"fadeOut()");
 
 /* ---------------Troca de background--------------- */
 // function changeBg(bg) {

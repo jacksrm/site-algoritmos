@@ -2,20 +2,47 @@ import express from 'express';
 
 import toArray from '../../utils/toArray';
 import quick from '../../utils/ordenar';
+import generateRandomArray from '../../utils/generateRandomArray';
 
 const route = express.Router();
 
 route.get('/ordenar', (req, res) => {
-  res.render('pages/ordenar', { resultado: null, header: true });
+  res.render('pages/ordenar', { 
+    resultado: null, 
+    header: true, 
+    value: '' 
+  });
 });
 
 route.post('/ordenar', (req, res) => {
   const { vetor } = req.body;
 
-  const entry = toArray(vetor);
-  const resultado = quick(toArray(vetor));
-  
-  return res.render('pages/ordenar', { entry, resultado, header: true });
+  const entry = toArray(vetor).map( el => ` ${el}`);
+  const resultado = quick(toArray(vetor)).map( el => ` ${el}`);
+
+  return res.render('pages/ordenar', {
+    entry,
+    resultado,
+    header: true,
+    value: '',
+  });
+});
+
+route.post('/ordenar/generate-array', (req, res) => {
+  const { size, min, max } = req.body;
+  const generatedArray = generateRandomArray(
+    parseFloat(min),
+    parseFloat(max),
+    parseInt(size)
+  );
+
+  const value = generatedArray.toString();
+
+  return res.render('pages/ordenar', {
+    value,
+    resultado: null,
+    header: true,
+  });
 });
 
 export default route;
