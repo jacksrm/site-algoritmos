@@ -1,5 +1,6 @@
 import express from 'express';
 
+import toArray from '../../utils/toArray';
 import quick from '../../utils/ordenar';
 
 const route = express.Router();
@@ -11,7 +12,7 @@ route.get('/ordenar', (req, res) => {
 route.post('/ordenar', (req, res) => {
   const { vetor } = req.body;
 
-  const resultado = quick(vetor);
+  const resultado = quick(toArray(vetor));
 
   console.log(resultado);
   
