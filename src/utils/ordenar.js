@@ -39,10 +39,9 @@ function quebra(vetor, left, right, pivo){
 function troca(vetor, i, j){
     let temp = vetor[i];
     vetor[i] = vetor[j];
-    vetor[j] = temp; 
+    vetor[j] = temp;
 }
 
 export default quick;
-
 
 //vetor de exemplo para teste: 1, 100, 39, 200, 100, 25, 0, 45
