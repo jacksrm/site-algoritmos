@@ -11,10 +11,10 @@ route.get('/somador', (req, res) => {
 
 route.post('/somador', (req, res) => {
   const { array } = req.body;
-
-  const resultado = somador(toArray(array));
+  const entry = toArray(array);
+  const resultado = somador(entry);
   
-  return res.render('pages/somador', { resultado, header: true });
+  return res.render('pages/somador', { entry, resultado, header: true });
 });
 
 export default route;
