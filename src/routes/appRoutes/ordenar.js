@@ -12,8 +12,11 @@ route.post('/ordenar', (req, res) => {
   const { vetor } = req.body;
 
   const resultado = quick(vetor);
+
+  console.log(resultado);
   
-  return res.render('pages/ordernar', { resultado, header: true });
+  return res.render('pages/ordenar', { resultado, header: true });
+
 });
 
 export default route;

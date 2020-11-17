@@ -2,6 +2,14 @@ var left = 0;
 var right = 100;
 
 function quick(vetor, left, right){
+    
+    if (typeof vetor === 'string')
+    vetor = vetor.split(',').map((el) => {
+      el = parseFloat(el);
+      if (!el) el = 0;
+      return el;
+    });
+
    var pivo = left;
    if(left < right){
        var pivoIndex = quebra(vetor, left, right, pivo);
