@@ -13,5 +13,6 @@ buttonPlay.addEventListener('click', () => {
 });
 
 mulekeBlack.addEventListener('click', () => {
+  audio.pause();
   mulekeBlack.classList.add('muleke-off');
 })
