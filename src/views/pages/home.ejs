@@ -25,7 +25,7 @@
   <ul>
     <% equipe.map((integrante, index) => { %>
     <li>
-      <a target="_blank" class="github" href="<%= github[index]%>">
+      <a id="integrante-<%= index + 1 %>" target="_blank" class="github" href="<%= github[index]%>">
         <div></div>
         <span><%= integrante %></span>
         <img

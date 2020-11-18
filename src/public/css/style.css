@@ -270,7 +270,25 @@ footer a.github {
 footer a.github:hover,
 footer a.github:focus {
   transform: scale(1.1, 1.1);
-  filter: invert(1) brightness(1.01);
+  background-color: #fff;
+}
+
+#integrante-1:hover,
+#integrante-1:focus {
+  background: url('https://avatars0.githubusercontent.com/u/62717829?s=400&u=03b7f1eb61aa7495d5f4959434c5f4600b5386a9&v=4');
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+}
+
+footer a.github:hover img,
+footer a.github:focus img {
+  filter: invert(1);
+}
+
+footer a.github:hover span,
+footer a.github:focus span {
+  filter: invert(1);
 }
 
 footer a.github img {
