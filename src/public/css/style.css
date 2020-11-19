@@ -268,6 +268,10 @@ footer a.github {
   transition: all 200ms;
 }
 
+footer a.github img {
+  transition: all 200ms;
+}
+
 footer a.github:hover,
 footer a.github:focus {
   transform: scale(1.1, 1.1);
@@ -282,14 +286,48 @@ footer a.github:focus {
   background-color: #fff;
 }
 
+#integrante-2:hover,
+#integrante-2:focus {
+  background: url('https://avatars1.githubusercontent.com/u/70494467?s=400&u=0c4ba372d6c83a0abe4cb2aa95672493f54c4427&v=4');
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+}
+
+#integrante-3:hover,
+#integrante-3:focus {
+  background: url('https://avatars1.githubusercontent.com/u/66738621?s=400&u=95730c215acea929616d3a25905a44f404dc1850&v=4');
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+}
+
+#integrante-4:hover,
+#integrante-4:focus {
+  background: url('https://avatars0.githubusercontent.com/u/70484799?s=460&u=43c45b1e960dcc5d0a25af8122e89099748dcb6c&v=4');
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+}
+
+#integrante-5:hover,
+#integrante-5:focus {
+  background: url('https://avatars1.githubusercontent.com/u/70498107?s=400&u=2b2df4461d0be1c71199cd89024a54abfdf22bf9&v=4');
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+}
+
 footer a.github:hover img,
 footer a.github:focus img {
   filter: invert(1);
+  margin-left: auto;
 }
 
 footer a.github:hover span,
 footer a.github:focus span {
-  filter: invert(1);
+  /* filter: invert(1); */
+  display: none;
 }
 
 footer a.github img {
