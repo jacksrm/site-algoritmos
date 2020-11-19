@@ -9,7 +9,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  display: none;
+  /* display: none; */
   background: transparent;
 }
 
@@ -312,7 +312,7 @@ footer a.github:focus {
 
 #integrante-5:hover,
 #integrante-5:focus {
-  background: url('https://avatars1.githubusercontent.com/u/70498107?s=400&u=2b2df4461d0be1c71199cd89024a54abfdf22bf9&v=4');
+  background: url('https://avatars2.githubusercontent.com/u/70498107?s=400&u=325d1eb561ab569d66137a4ab707ac2702a94ef2&v=4');
   background-position: center;
   background-size: cover;
   background-color: #fff;
@@ -506,20 +506,20 @@ footer a.github img {
   top: 0;
   right: 0;
   height: 100%;
-  transition: all 600ms;
   width: 0;
   z-index: 5000;
-  content: none;
+  transition: all 600ms;
 }
 
 .slide-menu h2 {
   font-size: 1.3rem;
-  margin: 25px 0;
+  margin-bottom: 25px;
 }
 
 .slide-menu p {
   font-size: 1.3rem;
   font-weight: 300;
+  text-align: center;
 }
 
 .slide-menu form {
@@ -580,19 +580,20 @@ footer a.github img {
 
 .slide-on {
   border: 1px solid #fff;
+  padding: 15px;
   width: 50%;
 }
 
 .slide-off {
   width: 0%;
 }
-
+/* 
 .slide-off p,
 .slide-off h2,
 .slide-off input,
 .slide-off button {
   display: none;
-}
+} */
 
 /* -------- STYLE FOR FADE IN AND OUT EFFECT -------- */
 .transparent {
