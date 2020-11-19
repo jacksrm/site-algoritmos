@@ -205,13 +205,13 @@ section {
 }
 
 #ordenar {
-  background-image: url('../images/background11.jpg');
+  background-image: url('../images/bg-cards/QUICKSORT.svg');
   background-position: top center;
   background-size: cover;
 }
 
 #contador {
-  background-image: url('../images/background12.jpg');
+  background-image: url('../images/bg-cards/CONTAGEM.svg');
   background-position: top center;
   background-size: cover;
 }
