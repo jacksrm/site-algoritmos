@@ -5,7 +5,7 @@
   <button id="muleke-pause">pause</button>
   <div class="eterno-muleke"></div>
 </div>
-<header class="site-header" >
+<header class="site-header">
   <h1 id="site-title">Algoritmos Básicos</h1>
 </header>
 <section id="section-1">
@@ -25,7 +25,12 @@
   <ul>
     <% equipe.map((integrante, index) => { %>
     <li>
-      <a id="integrante-<%= index + 1 %>" target="_blank" class="github" href="<%= github[index]%>">
+      <a
+        id="integrante-<%= index + 1 %>"
+        target="_blank"
+        class="github"
+        href="<%= github[index] %>"
+      >
         <div></div>
         <span><%= integrante %></span>
         <img
@@ -37,4 +42,4 @@
     <% }) %>
   </ul>
 </footer>
-<script src="http://localhost:3333/js/sad-muleke-play.js"></script>i
+<script src="http://localhost:3333/js/sad-muleke-play.js"></script>

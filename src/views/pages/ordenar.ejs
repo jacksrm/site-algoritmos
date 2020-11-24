@@ -14,7 +14,6 @@
         <input type="number" name="max" placeholder="Valor máx" />
         <button type="submit">gerar</button>
       </form>
-      <br>
       <h2>Informações sobre o algoritmo Quicksort</h2>
       <p>
         O algoritmo Quicksort utiliza o paradigma de programação Dividir para Conquistar ou divide and conquer. 
@@ -30,11 +29,10 @@
   <div class="flip-container">
     <button id="btn-menu" class="flipper"><</button>
   </div>
-<<<<<<< HEAD
   <h1>Ordenar um array</h1>
   <div class="container">
     <form action="/app/ordenar" method="POST" autocomplete="off">
-      <p>Digite números aleatórios :3</p>
+      <p>Digite números aleatórios (ﾉ･ｪ･)ﾉ</p>
       <input
         type="text"
         name="vetor"
@@ -55,34 +53,6 @@
         Array ordenado: [<%= resultado %>]
       </p>
       <% } %>
-=======
-  <div class="dark-filter">
-    <h1>Ordenar um array</h1>
-    <div class="container">
-      <form action="/app/ordenar" method="POST" autocomplete="off">
-        <p>Digite números aleatórios (ﾉ･ｪ･)ﾉ</p>
-        <input
-          type="text"
-          name="vetor"
-          required
-          autofocus
-          pattern="^[\d\-,.]+$"
-          placeholder="Ex: 1,2,3,4,5"
-          value="<%= value %>"
-        />
-        <button type="submit">Ordenar</button>
-      </form>
-      <div class="resultado">
-        <% if(resultado) { %>
-        <p>
-          Array: [<%= entry %>]
-          <br />
-          <br />
-          Array ordenado: [<%= resultado %>]
-        </p>
-        <% } %>
-      </div>
->>>>>>> 09a0d0dcada2d1e9729b069e0ccfb3e9fa69e2a0
     </div>
   </div>
 </section>
