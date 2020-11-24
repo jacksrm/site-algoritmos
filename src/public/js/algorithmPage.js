@@ -42,5 +42,7 @@ if (button && slider && slideArea) {
     slideArea.classList.add('slide-area-off');
     slider.classList.remove('slide-on');
     slider.classList.add('slide-off');
+    if (!transition.classList.contains('transparent'))
+    transition.classList.add('transparent');
   });
 }

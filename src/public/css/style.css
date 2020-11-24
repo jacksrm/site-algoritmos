@@ -106,6 +106,7 @@ header.arrow-back {
   position: absolute;
   left: 15px;
   top: 15px;
+  z-index: 3000;
 }
 
 header.arrow-back a {
@@ -258,7 +259,7 @@ footer a.github {
   height: 200px;
   font-size: 1.6rem;
   color: #ebebeb;
-  background-color: #000;
+  background-color: #111;
   border: 1px solid #ebebeb;
   text-decoration: none;
   text-align: center;
@@ -338,22 +339,13 @@ footer a.github img {
 
 /* -------- ALGORITHM INPUT AND SHOW STYLE -------- */
 .algoritmo {
-  height: 84vh;
-  width: 84vw;
+  height: 100vh;
+  width: 100vw;
   justify-content: space-around;
+  align-items: center;
   margin: auto 0;
   border-radius: 5px;
   position: relative;
-}
-
-.algoritmo .dark-filter {
-  height: 100%;
-  width: 100%;
-  background-color: #000000a8;
-  display: inherit;
-  flex-direction: inherit;
-  justify-content: inherit;
-  align-items: inherit;
 }
 
 .algoritmo h1 {
@@ -571,11 +563,15 @@ footer a.github img {
 }
 
 #ordenar #slider {
-  background-color: #170606;
+  background-color: #332513;
 }
 
 #primo #slider {
   background-color: #130507;
+}
+
+#contador #slider {
+  background-color: #2A282F;
 }
 
 .slide-on {
@@ -660,8 +656,6 @@ footer a.github img {
 @media (max-width: 1250px) {
   .algoritmo {
     flex-direction: column;
-    width: 70vw;
-    height: 90vh;
     min-width: 600px;
     min-height: unset;
   }

@@ -4,7 +4,11 @@
   <div id="slider" class="slide-menu slide-off">
     <div id="transition" class="transparent">
       <h2>Gerar array automático</h2>
-      <form action="/app/ordenar/generate-array" method="POST" autocomplete="off">
+      <form
+        action="/app/ordenar/generate-array"
+        method="POST"
+        autocomplete="off"
+      >
         <input type="number" name="size" placeholder="Tamanho" />
         <input type="number" name="min" placeholder="Valor min" />
         <input type="number" name="max" placeholder="Valor máx" />
@@ -15,32 +19,30 @@
   <div class="flip-container">
     <button id="btn-menu" class="flipper"><</button>
   </div>
-  <div class="dark-filter">
-    <h1>Ordenar um array</h1>
-    <div class="container">
-      <form action="/app/ordenar" method="POST" autocomplete="off">
-        <p>Digite números aleatórios :3</p>
-        <input
-          type="text"
-          name="vetor"
-          required
-          autofocus
-          pattern="^[\d\-,.]+$"
-          placeholder="Ex: 1,2,3,4,5"
-          value="<%= value %>"
-        />
-        <button type="submit">Ordenar</button>
-      </form>
-      <div class="resultado">
-        <% if(resultado) { %>
-        <p>
-          Array: [<%= entry %>]
-          <br />
-          <br />
-          Array ordenado: [<%= resultado %>]
-        </p>
-        <% } %>
-      </div>
+  <h1>Ordenar um array</h1>
+  <div class="container">
+    <form action="/app/ordenar" method="POST" autocomplete="off">
+      <p>Digite números aleatórios :3</p>
+      <input
+        type="text"
+        name="vetor"
+        required
+        autofocus
+        pattern="^[\d\-,.]+$"
+        placeholder="Ex: 1,2,3,4,5"
+        value="<%= value %>"
+      />
+      <button type="submit">Ordenar</button>
+    </form>
+    <div class="resultado">
+      <% if(resultado) { %>
+      <p>
+        Array: [<%= entry %>]
+        <br />
+        <br />
+        Array ordenado: [<%= resultado %>]
+      </p>
+      <% } %>
     </div>
   </div>
 </section>

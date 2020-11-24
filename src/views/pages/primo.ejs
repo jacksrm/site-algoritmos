@@ -5,9 +5,12 @@
   <div id="slider" class="slide-menu slide-off">
     <div id="transition" class="transparent">
       <h2>Informações do algoritmo</h2>
-      <p> Número primo é qualquer número cujo conjunto dos divisores não inversíveis não é vazio, e todos os seus
-        elementos são produtos de por números inteiros inversíveis. São divisíveis apenas por um e por si mesmos. O
-        objetivo do algoritmo é averiguar se o número digitado é primo.
+      <p>
+        Número primo é qualquer número cujo conjunto dos divisores não
+        inversíveis não é vazio, e todos os seus elementos são produtos de por
+        números inteiros inversíveis. São divisíveis apenas por um e por si
+        mesmos. O objetivo do algoritmo é averiguar se o número digitado é
+        primo.
       </p>
     </div>
   </div>
@@ -15,23 +18,29 @@
   <div class="flip-container">
     <button id="btn-menu" class="flipper"><</button>
   </div>
-  <div class="dark-filter">
-    <h1>Será que é primo?</h1>
-    <div class="container">
-      <form action="/app/primo" method="POST" autocomplete="off">
-        <p>
-          Inserir o número o qual deseja verificar em sua existência se é
-          pertencente à categoria de números primos.
-        </p>
-        <input class="input-sml" type="number" min="1" required autofocus pattern="^[\d]+$" name="entrada"
-          placeholder="Ex: 11" />
-        <button type="submit">Averiguar</button>
-      </form>
-      <div class="resultado">
-        <% if(resultado) {%>
-        <p>Número <%= entrada %> <%= resultado %></p>
-        <% } %>
-      </div>
+  <h1>Será que é primo?</h1>
+  <div class="container">
+    <form action="/app/primo" method="POST" autocomplete="off">
+      <p>
+        Inserir o número o qual deseja verificar em sua existência se é
+        pertencente à categoria de números primos.
+      </p>
+      <input
+        class="input-sml"
+        type="number"
+        min="1"
+        required
+        autofocus
+        pattern="^[\d]+$"
+        name="entrada"
+        placeholder="Ex: 11"
+      />
+      <button type="submit">Averiguar</button>
+    </form>
+    <div class="resultado">
+      <% if(resultado) {%>
+      <p>Número <%= entrada %> <%= resultado %></p>
+      <% } %>
     </div>
   </div>
 </section>

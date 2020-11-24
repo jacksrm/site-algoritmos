@@ -5,37 +5,36 @@
   <div id="slider" class="slide-menu slide-off">
     <div id="transition" class="transparent">
       <h2>Informações do Algoritmo</h2>
-      <p>Algoritmo que faz a contagem de numeros entre 1 (inclusive) e o numero inserido (inclusive).</p>
+      <p>
+        Algoritmo que faz a contagem de numeros inteiros entre 1 (inclusive) e o numero
+        inserido (inclusive).
+      </p>
     </div>
   </div>
 
   <div class="flip-container">
-    <button id="btn-menu" class="flipper" ><</button>
+    <button id="btn-menu" class="flipper"><</button>
   </div>
-  <div class="dark-filter">
-    <h1>Contar números</h1>
-    <div class="container">
-      <form action="/app/contador" method="POST" autocomplete="off">
-        <p>Insira um número</p>
-        <input
-          class="input-sml"
-          type="number"
-          name="numero"
-          required
-          autofocus
-          min="1"
-          pattern="^[0-9]+$"
-          placeholder="Ex: 25"
-        />
-        <button type="submit">Contar</button>
-      </form>
-      <div class="resultado">
-        <% if(resultado) { %>
-        <p>
-          Quantidade de números entre 1 e <%= resultado %> é <%= resultado %>
-        </p>
-        <% } %>
-      </div>
+  <h1>Contar números</h1>
+  <div class="container">
+    <form action="/app/contador" method="POST" autocomplete="off">
+      <p>Insira um número</p>
+      <input
+        class="input-sml"
+        type="number"
+        name="numero"
+        required
+        autofocus
+        min="1"
+        pattern="^[0-9]+$"
+        placeholder="Ex: 25"
+      />
+      <button type="submit">Contar</button>
+    </form>
+    <div class="resultado">
+      <% if(resultado) { %>
+      <p>Quantidade de números entre 1 e <%= resultado %> é <%= resultado %></p>
+      <% } %>
     </div>
   </div>
 </section>
