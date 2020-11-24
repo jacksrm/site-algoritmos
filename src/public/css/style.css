@@ -79,6 +79,7 @@ body {
 p,
 span,
 input {
+  text-align: left;
   font-family: 'Barlow Condensed', sans-serif;
   color: #fff;
   font-size: 1.5rem;
@@ -511,7 +512,7 @@ footer a.github img {
 .slide-menu p {
   font-size: 1.3rem;
   font-weight: 300;
-  text-align: center;
+  text-align: justify;
 }
 
 .slide-menu form {
