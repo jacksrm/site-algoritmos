@@ -17,6 +17,9 @@ implemente os algoritmos a seguir, cada um em uma página diferente:
 5. Ordenação: Ordenar um array usando o método Quicksort
 6. Contagem: Dado um valor N, conte quantos valores inteiros existem entre 1 (inclusive) e N (inclusive).
 
+## Link do site no Heroku:
+Você pode acessar o site que foi hospedado no heroku por [este link](https://sitealgoritmosdsn.herokuapp.com/).
+
 ## O projeto foi desenvolvido por:
 - Jacson Rodrigues [→GitHub←](https://github.com/jacksrm/) - Líder da equipe, designer e programador.
 - Matheus Rodrigues [→GitHub←](https://github.com/Mayh6m) - Designer e programador.
