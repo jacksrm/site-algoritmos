@@ -1,7 +1,7 @@
 import fs from 'fs';
 
 function readDir() {
-  const testFolder = __dirname + '/../public/images';
+  const testFolder = __dirname + '/../../public/images';
   let struct = [];
 
   fs.readdirSync(testFolder).forEach((file) => {

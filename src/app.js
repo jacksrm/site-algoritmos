@@ -6,10 +6,10 @@ import { appRoutes, apiRoutes } from './routes';
 
 const app = express();
 app.use(cors());
-app.set('views', __dirname + '/views');
+app.set('views', __dirname + '/../views');
 app.set('view engine', 'ejs');
 app.use(expressLayouts);
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/../public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
