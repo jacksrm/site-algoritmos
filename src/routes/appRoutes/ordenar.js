@@ -3,6 +3,7 @@ import express from 'express';
 import toArray from '../../utils/toArray';
 import quick from '../../utils/ordenar';
 import generateRandomArray from '../../utils/generateRandomArray';
+import { url } from '../../../config';
 
 const route = express.Router();
 
@@ -10,7 +11,8 @@ route.get('/ordenar', (req, res) => {
   res.render('pages/ordenar', { 
     resultado: null, 
     header: true, 
-    value: '' 
+    value: '',
+    url
   });
 });
 
@@ -25,6 +27,7 @@ route.post('/ordenar', (req, res) => {
     resultado,
     header: true,
     value: '',
+    url
   });
 });
 
@@ -42,6 +45,7 @@ route.post('/ordenar/generate-array', (req, res) => {
     value,
     resultado: null,
     header: true,
+    url
   });
 });
 

@@ -3,6 +3,7 @@ import express from 'express';
 import toArray from '../../utils/toArray';
 import somador from '../../utils/somador';
 import generateRandomArray from '../../utils/generateRandomArray';
+import { url } from '../../../config';
 
 const route = express.Router();
 
@@ -11,6 +12,7 @@ route.get('/somador', (req, res) => {
     resultado: null,
     header: true,
     value: '',
+    url
   });
 });
 
@@ -24,6 +26,7 @@ route.post('/somador', (req, res) => {
     resultado,
     header: true,
     value: '',
+    url
   });
 });
 
@@ -41,6 +44,7 @@ route.post('/somador/generate-array', (req, res) => {
     value,
     resultado: null,
     header: true,
+    url
   });
 });
 

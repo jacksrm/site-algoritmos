@@ -3,6 +3,7 @@
 var _toArray = require('../../utils/toArray'); var _toArray2 = _interopRequireDefault(_toArray);
 var _somador = require('../../utils/somador'); var _somador2 = _interopRequireDefault(_somador);
 var _generateRandomArray = require('../../utils/generateRandomArray'); var _generateRandomArray2 = _interopRequireDefault(_generateRandomArray);
+var _config = require('../../../config');
 
 const route = _express2.default.Router();
 
@@ -11,6 +12,7 @@ route.get('/somador', (req, res) => {
     resultado: null,
     header: true,
     value: '',
+    url: _config.url
   });
 });
 
@@ -24,6 +26,7 @@ route.post('/somador', (req, res) => {
     resultado,
     header: true,
     value: '',
+    url: _config.url
   });
 });
 
@@ -41,6 +44,7 @@ route.post('/somador/generate-array', (req, res) => {
     value,
     resultado: null,
     header: true,
+    url: _config.url
   });
 });
 

@@ -1,10 +1,11 @@
 "use strict";Object.defineProperty(exports, "__esModule", {value: true}); function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }var _express = require('express'); var _express2 = _interopRequireDefault(_express);
 var _mdc = require('../../utils/mdc'); var _mdc2 = _interopRequireDefault(_mdc);
+var _config = require('../../../config');
 
 const route = _express2.default.Router();
 
 route.get('/mdc', (req, res) => {
-  res.render('pages/mdc', { resultado: null, header: true });
+  res.render('pages/mdc', { resultado: null, header: true, url: _config.url });
 });
 
 route.post('/mdc', (req, res) => {
@@ -12,7 +13,7 @@ route.post('/mdc', (req, res) => {
   
   const resultado = _mdc2.default.call(void 0, numero1, numero2);
 
-  return res.render('pages/mdc', { resultado, header: true });
+  return res.render('pages/mdc', { resultado, header: true, url: _config.url });
 });
 
 exports. default = route;

@@ -3,6 +3,7 @@
 var _toArray = require('../../utils/toArray'); var _toArray2 = _interopRequireDefault(_toArray);
 var _ordenar = require('../../utils/ordenar'); var _ordenar2 = _interopRequireDefault(_ordenar);
 var _generateRandomArray = require('../../utils/generateRandomArray'); var _generateRandomArray2 = _interopRequireDefault(_generateRandomArray);
+var _config = require('../../../config');
 
 const route = _express2.default.Router();
 
@@ -10,7 +11,8 @@ route.get('/ordenar', (req, res) => {
   res.render('pages/ordenar', { 
     resultado: null, 
     header: true, 
-    value: '' 
+    value: '',
+    url: _config.url
   });
 });
 
@@ -25,6 +27,7 @@ route.post('/ordenar', (req, res) => {
     resultado,
     header: true,
     value: '',
+    url: _config.url
   });
 });
 
@@ -42,6 +45,7 @@ route.post('/ordenar/generate-array', (req, res) => {
     value,
     resultado: null,
     header: true,
+    url: _config.url
   });
 });
 

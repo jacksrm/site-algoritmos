@@ -9,17 +9,17 @@ app.use(_cors2.default.call(void 0, ));
 app.set('views', __dirname + '/../views');
 app.set('view engine', 'ejs');
 app.use(_expressejslayouts2.default);
-app.use(_express2.default.static(__dirname + '/../public'));
+app.use(_express2.default.static(__dirname + '/../public/'));
 app.use(_express2.default.urlencoded({ extended: true }));
 app.use(_express2.default.json());
 
-app.use('/app', _routes.appRoutes.contadorApp);
-app.use('/app', _routes.appRoutes.fibonacciApp);
-app.use('/app', _routes.appRoutes.homeApp);
-app.use('/app', _routes.appRoutes.mdcApp);
-app.use('/app', _routes.appRoutes.ordenarApp);
-app.use('/app', _routes.appRoutes.primoApp);
-app.use('/app', _routes.appRoutes.somadorApp);
+app.use(_routes.appRoutes.contadorApp);
+app.use(_routes.appRoutes.fibonacciApp);
+app.use(_routes.appRoutes.homeApp);
+app.use(_routes.appRoutes.mdcApp);
+app.use(_routes.appRoutes.ordenarApp);
+app.use(_routes.appRoutes.primoApp);
+app.use(_routes.appRoutes.somadorApp);
 
 app.use('/api', _routes.apiRoutes.contadorApi);
 app.use('/api', _routes.apiRoutes.fibonacciApi);
