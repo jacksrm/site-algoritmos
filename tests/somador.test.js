@@ -9,8 +9,8 @@ describe('Soma um array', () => {
   });
   
   it('Esperado soma não ser número', () => {
-    const arrayString = 'asdasd,asdasdasd,sdfsdfsdf, false';
+    const arrayString = ['asdasd,asdasdasd,sdfsdfsdf, false'];
     const soma = somador(arrayString);
-    expect(soma).not.toBeInstanceOf(I);
+    expect(soma).not.toBeInstanceOf(Number);
   });
 });
