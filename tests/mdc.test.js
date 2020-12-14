@@ -13,6 +13,6 @@ describe('Fazer MDC dos números', () => {
     const Num2 = 'sdadsada';
     const result = mdc(Num1, Num2);
 
-    expect(result).toBe(undefined);
+    expect(result).toBeUndefined();
   });
 });
