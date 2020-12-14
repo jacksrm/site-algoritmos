@@ -8,7 +8,7 @@ describe('Fazer MDC dos números', () => {
 
     expect(result).toBe(2);
   });
-  it('Esperado fazer o MDC dos números escolhidos', () => {
+  it('Esperado undefined com dados inválidos', () => {
     const Num1 = 'sdadsadsa';
     const Num2 = 'sdadsada';
     const result = mdc(Num1, Num2);
