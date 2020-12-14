@@ -1,6 +1,7 @@
 import quick from '../src/utils/ordenar';
+import toArray from '../src/utils/toArray';
 
-describe('Ordenar', () => {
+describe('Ordenação', () => {
   it('Esperado ordenar um array', () => {
     const array = [4, 5, 1, 0, 1];
     const ordenado = quick(array);
@@ -9,8 +10,10 @@ describe('Ordenar', () => {
   });
 
   it('Esperado um array ordenado com sete posições', () => {
-    const array = [4, 5, 1, 0, 1, , ,];
-    const ordenado = quick(array);
+    const arrayErro = '4,5,1,0,1, ,a';
+    const arrayCerto = toArray(arrayErro);
+    const ordenado = quick(arrayCerto);
+
     expect(ordenado).toHaveLength(7);
   });
 });
