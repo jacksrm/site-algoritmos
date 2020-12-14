@@ -11,10 +11,15 @@ O objetivo deste projeto é criar um site, com renderização da view via server
 implemente os algoritmos a seguir, cada um em uma página diferente:
 
 **1. Número é primo:** Um número inteiro positivo n é primo se for divisível apenas por 1 e por n.
+
 **2. Somatório:** Soma de um conjunto de números.
+
 **3. Fibonacci:** onde N > 1. Os primeiros termos são: 0, 1, 1, 2, 3, 5, 8, 13 …. Cada termo, além dos  dois primeiros, é derivado da soma de seus dois antecessores mais próximos.
+
 **4. Máximo divisor comum:** O máximo divisor comum (mdc) de dois inteiros a, b é o maior número inteiro que divide a e b.
+
 **5. Ordenação:** Ordenar um array usando o método Quicksort
+
 **6. Contagem:** Dado um valor N, conte quantos valores inteiros existem entre 1 (inclusive) e N (inclusive).
 
 ## Link do site no Heroku:
