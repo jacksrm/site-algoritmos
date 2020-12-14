@@ -8,7 +8,6 @@ describe('Fazer MDC dos números', () => {
 
     expect(result).toBe(2);
   });
-  
   it('Esperado fazer o MDC dos números escolhidos', () => {
     const Num1 = 'sdadsadsa';
     const Num2 = 'sdadsada';
