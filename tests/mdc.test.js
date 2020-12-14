@@ -8,13 +8,12 @@ describe('Fazer MDC dos números', () => {
 
     expect(result).toBe(2);
   });
-  describe('fazer MDC dos números', () => {
-    it('Esperado fazer o MDC dos números escolhidos', () => {
-      const Num1 = 'sdadsadsa';
-      const Num2 = 'sdadsada';
-      const result = mdc(Num1, Num2);
+  
+  it('Esperado fazer o MDC dos números escolhidos', () => {
+    const Num1 = 'sdadsadsa';
+    const Num2 = 'sdadsada';
+    const result = mdc(Num1, Num2);
 
-      expect(result).toBe(undefined);
-    });
+    expect(result).toBe(undefined);
   });
 });
