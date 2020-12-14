@@ -12,11 +12,28 @@
   </head>
   <body class="transparent" id="body">
     <% if (header) { %>
-      <header id="arrow-back" class="arrow-back">
-        <a href="/"><img src="<%= url %>/images/arrow.svg" alt="arrow"></a>
-      </header>
-    <% } %>
-    <%- body %>
+    <header id="arrow-back" class="arrow-back">
+      <a href="/"><img src="<%= url %>/images/arrow.svg" alt="arrow" /></a>
+    </header>
+    <% } %> <%- body %>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: 'AIzaSyATbfgQDFzzQ8XuSGuf41Ue0nRSDLKKIHw',
+        authDomain: 'site-algoritmos.firebaseapp.com',
+        projectId: 'site-algoritmos',
+        storageBucket: 'site-algoritmos.appspot.com',
+        messagingSenderId: '108075395699',
+        appId: '1:108075395699:web:7466db5acef9ed30235806',
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
     <script src="<%= url %>/js/index.js"></script>
   </body>
 </html>
