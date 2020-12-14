@@ -21,8 +21,17 @@ implemente os algoritmos a seguir, cada um em uma página diferente:
 Você pode acessar o site que foi hospedado no heroku por [este link](https://sitealgoritmosdsn.herokuapp.com/).
 
 ## O projeto foi desenvolvido por:
-- Jacson Rodrigues [→GitHub←](https://github.com/jacksrm/) - Líder da equipe, designer e programador.
-- Matheus Rodrigues [→GitHub←](https://github.com/Mayh6m) - Designer e programador.
-- Rafael Tavares [→GitHub←](https://github.com/RafaelD3v) - Programador.
-- João Monteiro [→GitHub←](https://github.com/joaomonteiroSN) - Programador.
-- Dante Dantas [→GitHub←](https://github.com/Dantedod) - Programador.
+- **Jacson Rodrigues**  [→GitHub←](https://github.com/jacksrm/) - Líder da equipe, designer e programador.
+- **Matheus Rodrigues** [→GitHub←](https://github.com/Mayh6m) - Designer e programador.
+- **Rafael Tavares** [→GitHub←](https://github.com/RafaelD3v) - Programador.
+- **João Monteiro** [→GitHub←](https://github.com/joaomonteiroSN) - Programador.
+- **Dante Dantas** [→GitHub←](https://github.com/Dantedod) - Programador.
+
+## Executar os testes:
+
+Cada algoritmo fundamental do site possui dois testes de verificação usando a biblicoteca **Jest** versão 26.6.3.
+
+Como no projeto foi usado o gerenciador de dependências **Yarn** o comando para executar todos os testes é:
+
+    $> yarn test
+
