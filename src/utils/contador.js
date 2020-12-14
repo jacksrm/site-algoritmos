@@ -1,3 +1,3 @@
-const contador = numero => parseInt(numero);
+const contador = numero => Math.floor(parseInt(numero));
 
 export default contador;
