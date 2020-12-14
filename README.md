@@ -26,7 +26,7 @@ implemente os algoritmos a seguir, cada um em uma página diferente:
 Você pode acessar o site que foi hospedado no heroku por [este link](https://sitealgoritmosdsn.herokuapp.com/).
 
 ## O projeto foi desenvolvido por:
-- **Jacson Rodrigues**  [→GitHub←](https://github.com/jacksrm/) - Líder da equipe, designer e programador. :squirrel:
+- **Jacson Rodrigues**  [→GitHub←](https://github.com/jacksrm/) - Líder da equipe, designer e programador. :rage1:
 - **Matheus Rodrigues** [→GitHub←](https://github.com/Mayh6m) - Designer e programador. :trollface:
 - **Rafael Tavares** [→GitHub←](https://github.com/RafaelD3v) - Programador. :video_game:
 - **João Monteiro** [→GitHub←](https://github.com/joaomonteiroSN) - Programador. :suspect:
