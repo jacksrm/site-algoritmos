@@ -35,3 +35,4 @@ Como no projeto foi usado o gerenciador de dependências **Yarn** o comando para
 
     $> yarn test
 
+:rage3:

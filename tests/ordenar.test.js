@@ -15,5 +15,6 @@ describe('Ordenação', () => {
     const ordenado = quick(arrayCerto);
 
     expect(ordenado).toHaveLength(7);
+    expect(ordenado).toEqual(expect.arrayContaining([0, 0, 1, 1, 4, 5]));
   });
 });
