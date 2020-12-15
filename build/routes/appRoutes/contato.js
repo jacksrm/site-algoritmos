@@ -19,20 +19,7 @@ route.post('/contato', (req, res) => {
     telegram: telegram === 'on',
     mensagem,
   };
-
-  const firebaseConfig = {
-    apiKey: 'AIzaSyATbfgQDFzzQ8XuSGuf41Ue0nRSDLKKIHw',
-    authDomain: 'site-algoritmos.firebaseapp.com',
-    databaseURL: 'https://site-algoritmos-default-rtdb.firebaseio.com',
-    projectId: 'site-algoritmos',
-    storageBucket: 'site-algoritmos.appspot.com',
-    messagingSenderId: '108075395699',
-    appId: '1:108075395699:web:7466db5acef9ed30235806',
-  };
-
-  // Initialize Firebase
-  _firebase2.default.initializeApp(firebaseConfig);
-
+  
   const db = _firebase2.default.database().ref('mensagens');
 
   const novaMsg = db.push();

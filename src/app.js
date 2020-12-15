@@ -1,10 +1,23 @@
 import express from 'express';
 import expressLayouts from 'express-ejs-layouts';
 import cors from 'cors';
+import firebase from 'firebase';
 
 import { appRoutes, apiRoutes } from './routes';
 
 const app = express();
+
+// Initialize Firebase
+firebase.initializeApp({
+  apiKey: 'AIzaSyATbfgQDFzzQ8XuSGuf41Ue0nRSDLKKIHw',
+  authDomain: 'site-algoritmos.firebaseapp.com',
+  databaseURL: 'https://site-algoritmos-default-rtdb.firebaseio.com',
+  projectId: 'site-algoritmos',
+  storageBucket: 'site-algoritmos.appspot.com',
+  messagingSenderId: '108075395699',
+  appId: '1:108075395699:web:7466db5acef9ed30235806',
+});
+
 app.use(cors());
 app.set('views', __dirname + '/../views');
 app.set('view engine', 'ejs');
