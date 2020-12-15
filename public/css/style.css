@@ -275,6 +275,12 @@ section {
   resize: vertical;
 }
 
+.contato button {
+  background-color: transparent;
+  border: 1px solid #ffffffd7;
+  margin-top: 15px;
+}
+
 .contato .telefone {
   display: flex;
   align-items: center;
