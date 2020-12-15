@@ -20,6 +20,7 @@ app.use(appRoutes.mdcApp);
 app.use(appRoutes.ordenarApp);
 app.use(appRoutes.primoApp);
 app.use(appRoutes.somadorApp);
+app.use(appRoutes.contatoApp);
 
 app.use('/api', apiRoutes.contadorApi);
 app.use('/api', apiRoutes.fibonacciApi);

@@ -5,6 +5,7 @@ var _mdc = require('./appRoutes/mdc'); var _mdc2 = _interopRequireDefault(_mdc);
 var _ordenar = require('./appRoutes/ordenar'); var _ordenar2 = _interopRequireDefault(_ordenar);
 var _primo = require('./appRoutes/primo'); var _primo2 = _interopRequireDefault(_primo);
 var _somador = require('./appRoutes/somador'); var _somador2 = _interopRequireDefault(_somador);
+var _contato = require('./appRoutes/contato'); var _contato2 = _interopRequireDefault(_contato);
 
 var _somador3 = require('./apiRoutes/somador'); var _somador4 = _interopRequireDefault(_somador3);
 var _fibonacci3 = require('./apiRoutes/fibonacci'); var _fibonacci4 = _interopRequireDefault(_fibonacci3);
@@ -21,6 +22,7 @@ var _filesList = require('./apiRoutes/filesList'); var _filesList2 = _interopReq
   ordenarApp: _ordenar2.default,
   primoApp: _primo2.default,
   somadorApp: _somador2.default,
+  contatoApp: _contato2.default,
 }; exports.appRoutes = appRoutes;
 
  const apiRoutes = {

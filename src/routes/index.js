@@ -5,6 +5,7 @@ import mdcApp from './appRoutes/mdc';
 import ordenarApp from './appRoutes/ordenar';
 import primoApp from './appRoutes/primo';
 import somadorApp from './appRoutes/somador';
+import contatoApp from './appRoutes/contato';
 
 import somadorApi from './apiRoutes/somador';
 import fibonacciApi from './apiRoutes/fibonacci';
@@ -21,6 +22,7 @@ export const appRoutes = {
   ordenarApp,
   primoApp,
   somadorApp,
+  contatoApp,
 };
 
 export const apiRoutes = {

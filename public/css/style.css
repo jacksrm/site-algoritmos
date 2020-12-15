@@ -78,7 +78,9 @@ body {
 
 p,
 span,
-input {
+input,
+label,
+textarea {
   text-align: left;
   font-family: 'Barlow Condensed', sans-serif;
   color: #fff;
@@ -160,6 +162,18 @@ header.arrow-back a img {
   font-size: 3rem;
 }
 
+.site-header a {
+  position: absolute;
+  top: 6vh;
+  right: 5vw;
+  filter: invert(0.8);
+}
+
+.site-header a img {
+  height: 6vh;
+  min-height: 6vh;
+}
+
 
 /* -------- HOME MAIN STYLE -------- */
 section {
@@ -222,6 +236,61 @@ section {
   background-image: url('../images/bg-cards/PRIMO.svg');
   background-position: top center;
   background-size: cover;
+}
+
+/* -------- CONTACT STYLE -------- */
+.contato {
+  width: 70vw;
+  height: 100%;
+  background-color: #000000;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contato form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.contato input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffffd7;
+  width: 70%;
+  margin-bottom: 25px;
+  padding: 0 15px;
+}
+
+.contato textarea {
+  width: 70%;
+  background-color: transparent;
+  border: 1px solid #ffffffd7;
+  border-radius: 5px;
+  padding: 10px 10px;
+  max-height: 250px;
+  min-height: 100px;
+  resize: vertical;
+}
+
+.contato .telefone {
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+
+.telefone input[type="checkbox"] {
+  width: unset;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+.telefone label img {
+  height: 40px;
 }
 
 /* -------- FOOTER STYLE -------- */

@@ -1,0 +1,20 @@
+<%- contentFor('body') %>
+<section class="contato">
+  <form id="contatoForm" action="/contato" method="POST" autocomplete="off">
+    <input type="text" name="nome" placeholder="Nome" required autofocus min="3" />
+    <input type="email" name="email" placeholder="Email" required autofocus min="3" />
+
+    <div class="telefone">
+      <input type="tel" name="telefone" placeholder="Telefone" required autofocus min="3" />
+      <input type="checkbox" name="whatsapp" id="whatsapp">
+      <label for="whatsapp"><img src="/images/whatsapp.svg" alt="art by freepik"></label>
+      <input type="checkbox" name="telegram" id="telegram">
+      <label for="telegram"><img src="/images/telegram.svg" alt="art by freepik"></label>
+    </div>
+
+    <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem..."></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+<script src="/js/algorithmPage.js"></script>
